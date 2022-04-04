@@ -49,12 +49,14 @@
 }
 .carousel-item:nth-child(1){
     background-image: url(../image/finland.jpg);
+    
 } 
 .carousel-item:nth-child(2){
     background-image: url(../image/mountains.jpg);
 } 
 .carousel-item:nth-child(3){
     background-image: url(../image/mountains-1.jpg);
+    
 } 
 .img_thumb{
     width: 9.375rem;
