@@ -24,12 +24,12 @@
   margin: 0rem 0.625rem;
 }
 
-.navbar-nav .nav-item.active .nav-link {
+.navbar-nav .nav-item.active .nav-navbar {
   color: rgb(2, 155, 2);
   font-weight: 500;
 }
 
-.navbar-nav .nav-item .nav-link {
+.navbar-nav .nav-item .nav-navbar{
   color: white;
   font-weight: 400;
 }
@@ -90,11 +90,29 @@
 .project__title h1 {
   margin-top: 3rem;
   padding-top: 3rem;
-  font-size: 700;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.project__title p{
+  margin: 1.5rem 0;
+  color: #585858;
+
 }
 .nav-pills {
   display: flex;
   justify-content: center;
+  margin: 0.3rem 0;
+}
+.nav-item .nav-navitem{
+  border: 1px solid black;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem ;
+  color: #585858;
+}
+.nav-item .nav-navitem.active{
+  background-color:#35a22c;
+  color: white;
+  border-color:#35a22c;
 }
 .col-4{
   margin: 1.3rem 0;
@@ -104,24 +122,25 @@
   flex-wrap: wrap;
 }
 .card{
-  border-radius: 18px;
-  box-shadow: 0px 0px 4px 1px #e9e7e7 ;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 1px #bbbaba ;
   text-align: center;
 }
 .card:hover{
-  border-color: rgb(10, 175, 10);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-color:#35a22c;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .card:hover .card-body h4{
-  color:rgb(10, 175, 10) ;
+  color:#35a22c ;
 }
 .card:hover .card-img-top{
-  box-shadow: 0px 0px 0px 1px #e9e7e7 ;
+  box-shadow: 0px 0px 5px 1px #bbbaba ;
 }
 .card .card-img-top{
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
+  width: 100%;
 }
 
 .card .card-body{
@@ -135,4 +154,11 @@
 }
 .card-body p{
   color: #585858;
+}
+
+#job_concept{
+
+}
+.row2{
+  display: flex;
 }
