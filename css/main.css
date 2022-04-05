@@ -57,7 +57,9 @@
   background-position: center;
   background-size: cover;
 }
-
+.carousel-item{
+  background-color: rgba(255, 255, 255, 0.377);
+}
 .carousel-item:nth-child(1) {
   background-image: url(../image/finland.jpg);
 }
@@ -80,7 +82,13 @@
   top: 50%;
   transform: translateY(-50%);
 }
-
+.carousel-caption h3{
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.carousel-caption p{
+  font-size: 1.5rem;
+}
 .carousel-indicators li {
   height: 15px;
   width: 15px;
