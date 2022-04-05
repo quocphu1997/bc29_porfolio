@@ -29,7 +29,7 @@
   font-weight: 500;
 }
 
-.navbar-nav .nav-item .nav-navbar{
+.navbar-nav .nav-item .nav-navbar {
   color: white;
   font-weight: 400;
 }
@@ -93,72 +93,237 @@
   font-size: 2.2rem;
   font-weight: 700;
 }
-.project__title p{
+.project__title p {
   margin: 1.5rem 0;
   color: #585858;
-
 }
 .nav-pills {
   display: flex;
   justify-content: center;
   margin: 0.3rem 0;
 }
-.nav-item .nav-navitem{
+.nav-item .nav-navitem {
   border: 1px solid black;
   margin-right: 0.5rem;
-  border-radius: 0.25rem ;
+  border-radius: 0.25rem;
   color: #585858;
 }
-.nav-item .nav-navitem.active{
-  background-color:#35a22c;
+.nav-item .nav-navitem.active {
+  background-color: #35a22c;
   color: white;
-  border-color:#35a22c;
+  border-color: #35a22c;
 }
-.col-4{
+.col-4 {
   margin: 1.3rem 0;
 }
-.row{
+.row {
   display: flex;
   flex-wrap: wrap;
 }
-.card{
+.card {
   border-radius: 20px;
-  box-shadow: 0px 0px 5px 1px #bbbaba ;
+  box-shadow: 1px 1px 5px 2px #bbbaba;
   text-align: center;
+  transition: all 0.5s;
 }
-.card:hover{
-  border-color:#35a22c;
+.card:hover {
+  border-color: #35a22c;
+  border-width: 2px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-.card:hover .card-body h4{
-  color:#35a22c ;
+
+.card:hover .card-body h4 {
+  color: #35a22c;
 }
-.card:hover .card-img-top{
-  box-shadow: 0px 0px 5px 1px #bbbaba ;
+.card:hover .card-img-top {
+  box-shadow: 0px 0px 0.5px 2px rgb(255, 255, 255);
 }
-.card .card-img-top{
+.card .card-img-top {
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
   width: 100%;
+  transition: all 0.5s;
 }
 
-.card .card-body{
+.card .card-body {
   text-align: center;
   padding-bottom: 2rem;
   margin-bottom: 10px;
   transition: all 0.5s;
 }
-.card-body h4{
+.card-body h4 {
   font-size: 1.2rem;
+  transition: all 0.5s;
 }
-.card-body p{
+.card-body p {
   color: #585858;
 }
-
-#job_concept{
+.projects {
+  width: 100%;
+  height: 1300px;
+  padding-bottom: 2rem;
+}
+.feature {
+  width: 100%;
+  height: 42rem;
+  background-position: 50% 50%;
+  /* position: relative; */
+  background-image: url(../image/3.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.feature .overlay {
+  background: rgba(7, 10, 12, 0.72);
+  height: 100%;
+  position: relative;
+}
+.feature_heading {
+  text-align: center;
+  color: white;
+  padding: 5rem 0 1rem;
+}
+.feature_heading h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.feature_heading p {
+  padding-top: 1.5rem;
+}
+.feature_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.feature_card {
+  margin: 0 1rem;
+  padding: 2rem 0.5rem 1rem 0.5rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.13);
+  /* opacity:0.7; */
+  box-shadow: none;
+  border-radius: 10px;
+  backdrop-filter: blur(3px);
+  transition: all 0.5s;
+}
+.feature_card:hover {
+  background-color: black;
+  border-color: white;
+}
+.feature_card i {
+  font-size: 3rem;
+  padding-top: 1rem;
+  color: #35a22c;
+}
+.feature_card:hover .feature_body h4 {
+  color: white;
+}
+.feature_card .feature_body h4 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+  color: white;
+  transition: all 0.5s;
+}
+.feature_card .feature_body p {
+  padding: 0rem 0.5rem;
+  color: white;
+}
+.award {
+  width: 100%;
+  height: 380px;
+  background-image: url(../image/memphis_3.png);
+  background-position: 0% 80%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.overlay_award {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.award_content {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 14%;
+}
+.card_award {
+  width: 30%;
+  height: 70%;
+  padding: 2.8rem;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.13);
+  backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 30px 0px rgb(190, 188, 188);
+}
+.card_award h2 {
+  font-size: 2.2rem;
+  color: back;
+  font-weight: 700;
+}
+.card_award p {
+  line-height: 1.5;
+  color: #585858;
+}
+.left_award {
+  margin-left: 1rem;
+}
+.icon_award_left {
+  display: flex;
+  justify-content: space-around;
+}
+.icon_award_left img {
+  width: 7rem;
+  height: auto;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+#footer {
+  height: 220px;
+  background-color: #222222;
+}
+.boder_icon{
+  width: 80%;
+  margin: auto;
+  border-bottom: 0.5px solid #bbbaba33;
 
 }
-.row2{
+.icon_footer{
   display: flex;
+  justify-content: center;
+  padding: 2.5rem 0 1.5rem;
+}
+.icon_footer i {
+  border: 0.1px solid #aaaaaa33;
+  border-radius: 100%;
+  color: #aaaaaa;
+  margin: 0.5rem;
+}
+.icon_footer .fb {
+  padding: 0.8rem 0.95rem;
+}
+.icon_footer .twtt {
+  padding: 0.78rem 0.75rem;
+}
+.icon_footer .ins{
+  padding: 0.8rem 0.85rem;
+}
+.icon_footer .gpls{
+  padding: 0.78rem 0.65rem;
+}
+.icon_footer .likein{
+  padding: 0.78rem 0.8rem;
+}
+.ftr_copy{
+  display: flex;
+  color: #aaaaaa;
+  justify-content: center;
+  margin-top: 1.5rem;
 }
